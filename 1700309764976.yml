@@ -7,9 +7,9 @@ log-level: silent
 external-controller: 0.0.0.0:9090
 secret: ""
 proxies:
-  - name: 1A新官网:airtcp1.top（请切换节点，如果不能访问请挂代理）
+  - name: 1A新官网:airtcp4.top（请切换节点，如果不能访问请挂代理）
     type: vmess
-    server: airtcp1.top
+    server: airtcp3.top
     port: 443
     uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
     alterId: 0
@@ -155,6 +155,14 @@ proxies:
     type: vmess
     server: cnah2.lanyunshi.top
     port: 30005
+    uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
+    alterId: 2
+    cipher: auto
+    udp: true
+  - name: A-1B美国4837-原生解锁流媒体-4
+    type: vmess
+    server: aliyun.airtcp.icu
+    port: 60002
     uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
     alterId: 2
     cipher: auto
@@ -931,7 +939,7 @@ proxy-groups:
   - name: Proxy
     type: select
     proxies:
-      - 1A新官网:airtcp1.top（请切换节点，如果不能访问请挂代理）
+      - 1A新官网:airtcp4.top（请切换节点，如果不能访问请挂代理）
       - 1A有节点超时请刷新节点（获取最新节点若刷新不成功请官网重新导入）
       - A-1A香港01-HKT-家宽动态X2
       - A-1A香港01-高级HKT-动态原生X2
@@ -950,6 +958,7 @@ proxy-groups:
       - A-1B美国4837-TK GPT 流媒体-家宽IP1
       - A-1B美国4837-TK GPT 流媒体-家宽IP3
       - A-1B美国4837-TK GPT 流媒体-家宽IP4
+      - A-1B美国4837-原生解锁流媒体-4
       - A-1新美国-IEPL-解锁流媒体-X2
       - A-1新美国2-IEPL-精品网络-X2
       - A-1日本-AWS-混合节点-X2
@@ -1072,7 +1081,6 @@ rules:
   - DOMAIN-KEYWORD,clarivate,DIRECT
   - DOMAIN-KEYWORD,acs.,DIRECT
   - DOMAIN-KEYWORD,rsc.,DIRECT
-  - DOMAIN,www.researchgate.net,DIRECT
   - DOMAIN,pubs.aip.org,DIRECT
   - DOMAIN-SUFFIX,nature.com,DIRECT
   - DOMAIN,www.editorialmanager.com,DIRECT
@@ -1094,6 +1102,7 @@ rules:
   - DOMAIN,7mmtv.sx,Proxy
   - DOMAIN-KEYWORD,sijishe,Proxy
   - DOMAIN,sjs474.com,Proxy
+  - DOMAIN,sjs47.cc,Proxy
   - DOMAIN,98avcdn.xyz,Proxy
   - DOMAIN-KEYWORD,jbkcdn,Proxy
   - DOMAIN,urlimage.cc,Proxy
@@ -1107,6 +1116,7 @@ rules:
   - DOMAIN,fivetiu.com,Proxy
   - DOMAIN,anitabi.cn,Proxy
   - DOMAIN-KEYWORD,steam,Proxy
+  - DOMAIN-SUFFIX,researchgate.net,Proxy
   - DOMAIN-SUFFIX,edgedatg.com,GlobalTV
   - DOMAIN-SUFFIX,go.com,GlobalTV
   - DOMAIN,linear-abematv.akamaized.net,GlobalTV
