@@ -1116,7 +1116,7 @@ rules:
   - DOMAIN,fivetiu.com,Proxy
   - DOMAIN,anitabi.cn,Proxy
   - DOMAIN-KEYWORD,steam,Proxy
-  - DOMAIN-SUFFIX,researchgate.net,Proxy
+  - DOMAIN-KEYWORD,researchgate,Proxy
   - DOMAIN-SUFFIX,edgedatg.com,GlobalTV
   - DOMAIN-SUFFIX,go.com,GlobalTV
   - DOMAIN,linear-abematv.akamaized.net,GlobalTV
