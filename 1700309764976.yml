@@ -865,7 +865,7 @@ proxies:
     udp: true
   - name: B-「国外可用」Japan-TYO
     type: vmess
-    server: 212.87.195.58
+    server: 212.87.195.224
     port: 1001
     uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
     alterId: 2
@@ -913,7 +913,7 @@ proxies:
     udp: true
   - name: B-「国外可用」Singapore-3
     type: vmess
-    server: 103.190.179.46
+    server: 103.190.179.33
     port: 1001
     uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
     alterId: 2
@@ -1079,9 +1079,10 @@ rules:
   - DOMAIN-KEYWORD,webofscience,DIRECT
   - DOMAIN-KEYWORD,webofknowledge,DIRECT
   - DOMAIN-KEYWORD,clarivate,DIRECT
-  - DOMAIN-KEYWORD,acs.,DIRECT
-  - DOMAIN-KEYWORD,rsc.,DIRECT
-  - DOMAIN,pubs.aip.org,DIRECT
+  - DOMAIN-KEYWORD,researchgate,DIRECT
+  - DOMAIN-SUFFIX,acs.org,DIRECT
+  - DOMAIN-SUFFIX,rsc.org,DIRECT
+  - DOMAIN-SUFFIX,aip.org,DIRECT
   - DOMAIN-SUFFIX,nature.com,DIRECT
   - DOMAIN,www.editorialmanager.com,DIRECT
   - DOMAIN-SUFFIX,wiley.com,DIRECT
@@ -1116,7 +1117,7 @@ rules:
   - DOMAIN,fivetiu.com,Proxy
   - DOMAIN,anitabi.cn,Proxy
   - DOMAIN-KEYWORD,steam,Proxy
-  - DOMAIN-KEYWORD,researchgate,Proxy
+  - DOMAIN,libgen.rs,Proxy
   - DOMAIN-SUFFIX,edgedatg.com,GlobalTV
   - DOMAIN-SUFFIX,go.com,GlobalTV
   - DOMAIN,linear-abematv.akamaized.net,GlobalTV
